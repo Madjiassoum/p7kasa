@@ -1,0 +1,28 @@
+.housing-container {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+}
+
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 599px) {
+  .housing-container {
+    width: 100%;
+  }
+}
+/* orientation paysage et portrait sur petits écrans */
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+/* orientation portrait sur mobile */
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}

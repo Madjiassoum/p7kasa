@@ -1,0 +1,32 @@
+.hostContainer{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+.hostPicture img {
+  margin-left: 0.4em;
+  object-fit: cover;
+  width: 1.5em;
+  border-radius: 50%;
+}
+
+
+.hostPicture img:hover {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 0;padding: .1em .1em;
+}
+
+@media screen and (max-width: 599px) {
+  .right{
+    display: flex;
+    justify-content: space-between;
+  }
+   .hostContainer{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   }
+
+
+}

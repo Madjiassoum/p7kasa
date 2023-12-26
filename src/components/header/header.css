@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 90%;
+}
+/* Image du logo-rouge du header*/
+.logo-red {
+  align-self: center;
+  object-fit: cover;
+  height: 3em;
+}
+
+/** div menu de navigation*/
+.div-header {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+/* parties logo et menus de navigation du eader*/
+.divHeaderLink-home,
+.divHeaderLink-about {
+  color: #ff6060; /* Couleur figma pour Header, texte*/
+  font: 2em bold normal;
+  justify-content: space-between;
+  margin-left: 2em;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
+  border-bottom: 0.1em solid #fff;
+}
+.divHeaderLink-home:hover,
+.divHeaderLink-about:hover {
+  border-bottom: 0.1em solid #ff6060;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .header {
+    width: 100%;
+  }
+}
+
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 599px) {
+  .header {
+    width: 100%;
+  }
+  .logo-red {
+    height: 1.3em;
+  }
+
+  .divHeaderLink-home,
+  .divHeaderLink-about {
+    margin-left: 0.5em;
+    font-size: 1.2em;
+  }
+}
+/* orientation paysage et portrait sur petits écrans */
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+/* orientation portrait sur mobile */
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}

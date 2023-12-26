@@ -1,0 +1,54 @@
+.nf-container {
+  width: 90%;
+  margin: auto;
+}
+.containerError404 {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.containerError404 .numberErrorPage {
+  color: #ff6060;
+  font-size: 8em;
+  margin: 0.51em;
+  text-align: center;
+  padding: 0;
+}
+.containerError404 .textErrorPage {
+  margin: 0 auto 2em auto;
+  color: #ff6060;
+  font-family: Montserrat;
+  text-align: center;
+}
+.containerError404 .retourHome {
+  color: #ff6060;
+  cursor: pointer;
+  font-size: 1.3em;
+  margin-bottom: 2em;
+  font-family: Montserrat;
+  text-decoration: none;
+  padding: 0.3em;
+  font-weight: bold;
+  position: relative;
+}
+.containerError404 .retourHome:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .containerError404 {
+    margin-bottom: .5em;
+  }
+}
+
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 599px) {
+  .containerError404 {
+    width: 100%;
+    margin: auto;
+  }
+  .numberErrorPage {
+    font-size: 3em;
+  }
+}

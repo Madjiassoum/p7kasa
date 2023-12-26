@@ -1,0 +1,31 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  row-gap: 40px;
+  width: 90%;
+  margin: 3em auto;
+  padding: 1em 0;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {}
+  
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 599px) {
+ 
+}
+/* orientation paysage et portrait sur petits écrans */
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+/* orientation portrait sur mobile */
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+

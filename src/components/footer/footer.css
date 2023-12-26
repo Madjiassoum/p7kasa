@@ -1,0 +1,20 @@
+.footer-container {
+  background-color: #000000;
+  text-align: center;
+  color: white;
+  padding: 1em 1em .5em 1em;
+  margin: auto;  
+}
+.logo .logoImg {
+  height: 3em;
+  width: 8em;
+}
+.textFooter {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 599px) {
+ .textFooter{
+  font-size: 1em;
+ }
+}

@@ -1,0 +1,10 @@
+.etoileG,
+.etoileP {
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0;
+  height: 1em;
+}
+.etoileG{
+  filter: brightness(80%);
+}

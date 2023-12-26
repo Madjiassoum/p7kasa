@@ -1,0 +1,63 @@
+.container-card {
+  width: 30%;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+  transition: ease-in-out 0.3;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 1) 0px 6px 12px;
+}
+.imgCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  /* filter: brightness(100%); */
+}
+.container-card h3 {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.container-card:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .container-card {
+    width: 46%;
+  }
+}
+
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 599px) {
+  .container-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .imgCard {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  h3 {
+    margin-top: 2em;
+    color: #fff !important;
+  }
+}
+/* orientation paysage et portrait sur petits écrans */
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+/* orientation portrait sur mobile */
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}

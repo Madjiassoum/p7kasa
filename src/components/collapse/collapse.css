@@ -1,0 +1,63 @@
+.container-about {
+  width: 100%;
+}
+/*  div titre container de title et description */
+.titre {
+  background-color: #ff6060;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*  SS-titre à  gauche de chevron up et down*/
+.titre .title {
+  font-size: 1.3em;
+  padding: 0.3em 1em;
+  display: flex;
+  background-color: #ff6060;
+  justify-content: space-between;
+}
+/**   DIv para contenant notre paragraphe p de description*/
+.para {
+  background-color: #f6f6f6;
+  display: flex;
+  color: #ff6060;
+  padding: 0.5em 1em 0.7em 1.5em;
+  font-weight: normal;
+  font-size: 1.2em;
+
+  text-align: justify;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .container-about{
+    width: 100%;
+  }
+  .titre{
+
+    width: 100%;
+    margin: auto;
+    /* display: flex; */
+    flex-direction: column;
+  }
+}
+  
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 599px) {
+ .container-about{
+  width: 100%;
+ }
+}
+/* orientation paysage et portrait sur petits écrans */
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+/* orientation portrait sur mobile */
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}

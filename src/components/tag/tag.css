@@ -1,0 +1,13 @@
+.tagContainer {
+  margin: 0;
+}
+.tagButton {
+  margin-right: 0.3em;
+  margin-bottom: .3em;
+  background-color: #ff6060;
+  justify-self: center;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.2em 0.9em 0.2em 0.9em;
+  border-radius: .6em;
+}
