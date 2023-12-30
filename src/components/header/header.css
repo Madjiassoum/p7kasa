@@ -37,14 +37,13 @@
   border-bottom: 0.1em solid #ff6060;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .header {
     width: 100%;
   }
 }
-
 /* En dessous de TABLETTES donc les mobiles */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .header {
     width: 100%;
   }

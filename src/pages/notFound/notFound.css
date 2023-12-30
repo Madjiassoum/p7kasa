@@ -9,17 +9,18 @@
   margin-bottom: 2em;
 }
 .containerError404 .numberErrorPage {
-  color: #ff6060;
-  font-size: 8em;
-  margin: 0.51em;
-  text-align: center;
-  padding: 0;
+  font-size: 6em;
+  margin: 0.51em auto;
+  /* padding: 0;border: 2px solid red; */
+  /* width: 50%; */
 }
-.containerError404 .textErrorPage {
-  margin: 0 auto 2em auto;
+.containerError404 .textErrorPage,
+.containerError404 .numberErrorPage {
   color: #ff6060;
-  font-family: Montserrat;
   text-align: center;
+  margin: 0.2em auto 0.4em auto;
+  width: 100%;
+  font-family: Montserrat;
 }
 .containerError404 .retourHome {
   color: #ff6060;
@@ -36,19 +37,25 @@
   text-decoration: underline;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .containerError404 {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 }
 
 /* En dessous de TABLETTES donc les mobiles */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .containerError404 {
     width: 100%;
     margin: auto;
   }
   .numberErrorPage {
     font-size: 3em;
+  }
+  .containerError404 .retourHome {
+    font-size: 1.1em;
+    opacity: 0.8;
+
+    margin-top: 1em;
   }
 }

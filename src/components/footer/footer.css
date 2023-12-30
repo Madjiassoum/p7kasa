@@ -13,7 +13,7 @@
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
  .textFooter{
   font-size: 1em;
  }

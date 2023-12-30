@@ -33,10 +33,10 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-.banner .banner-text {
-  font-size: 2em;
-}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner .banner-text {
+    font-size: 2em;
+  }
   .banner {
     width: 100%;
   }
@@ -49,7 +49,7 @@
 }
 
 /* En dessous de TABLETTES donc les mobiles */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .about-page {
     width: 100%;
   }
@@ -61,5 +61,6 @@
   }
   .banner .banner-text {
     font-size: 1.5em;
+    text-align: center;
   }
 }

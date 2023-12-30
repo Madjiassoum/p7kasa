@@ -32,6 +32,7 @@
   height: 100%;
   position: relative;
   object-fit: cover;
+  border-radius: 0.7em;
   z-index: 1;
 }
 .carrousel-container .number {
@@ -44,9 +45,19 @@
   z-index: 2;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .carrousel-container {
+    height: 350px;
+  }
 }
 
 /* En dessous de TABLETTES donc les mobiles */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
+  .carrousel-container {
+    height: 260px;
+    /* border: 2px solid red; */
+  }
+  .carrousel-container img {
+    border-radius: 0.7em;
+  }
 }
