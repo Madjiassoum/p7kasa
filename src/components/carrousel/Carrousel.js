@@ -33,14 +33,16 @@ function Carrousel({ myPictures }) {
           className="arrow arrow-right"
         />
       )}
-        <img
-          className="prdtImageCover"
-          src={myPictures[currentPicture]}
-          alt="La chambre à louer"
-        />
+      <img
+        className="prdtImageCover"
+        src={myPictures[currentPicture]}
+        alt="La chambre à louer"
+      />
+      {length > 1 && (
         <span className="number">
           {currentPicture + 1} / {length}
         </span>
+      )}
     </section>
   );
 }

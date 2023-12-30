@@ -43,7 +43,8 @@ export default function Ficheappt(props) {
           <div className="left">
             <h1 className="titreH1">{prdtSelected.title}</h1>
             <h2 className="location">{prdtSelected.location}</h2>
-            <div className="tags">
+            {/* Les tags  */}
+            <div className="tags">  
               {MesTag.map((tag, index) => (
                 <Tag key={tag} title={tag} />
               ))}
@@ -58,6 +59,7 @@ export default function Ficheappt(props) {
               />
             </div>
             <div className="rating">
+              {/* Les étoiles sur la page logement */}
               <Rate taux={prdtSelected.rating} />
             </div>
           </div>
