@@ -1,9 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
 import logo from '../../assets/logo.png';
 import './header.css';
 
 function Header() {
+  const location = useLocation();
+
   return (
     <>
       <div className="header">
@@ -12,10 +15,24 @@ function Header() {
         </div>
 
         <div className="div-header">
-          <Link to="/" className="divHeaderLink-home">
+          <Link
+            to="/"
+            className={
+              location.pathname === '/'
+                ? 'divHeaderLink-home  soulignement-Item'
+                : 'divHeaderLink-home  '
+            }
+          >
             Accueil
           </Link>
-          <Link to="/about" className="divHeaderLink-about">
+          <Link
+            to="/about"
+            className={
+              location.pathname === '/about'
+                ? 'divHeaderLink-about  soulignement-Item'
+                : 'divHeaderLink-about  '
+            }
+          >
             A Propos
           </Link>
         </div>
